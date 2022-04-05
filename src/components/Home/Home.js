@@ -6,13 +6,12 @@ import './Home.css';
 const Home = () => {
     const [reviews, setReviews] = useReviews();
     const firstReviews = reviews.slice(0, 3);
-    console.log(firstReviews);
     return (
         <div className='container'>
             <div className=' grid grid-cols-2 m-4'>
                 <div className='flex justify-center items-center'>
                     <div>
-                        <h1 className='text-5xl'>Welcome to <span className='text-orange-500'>Tech Junkies BD</span></h1>
+                        <h1 className='text-5xl'>Welcome to <span className='text-orange-500'>Tech Zone BD</span></h1>
                         <p className='text-xl text-left mt-6'>THERE'S NO SHORTAGE of products that are hailed
                             by their creators as "revolutionary" or "totally transformative"
                             upon launch. Sure, every company that births a new gadget into the
@@ -30,7 +29,7 @@ const Home = () => {
                 <h1 className='text-4xl my-6'>Customer Reviews</h1>
                 <div className='grid grid-cols-3 gap-6'>
                     {
-                        firstReviews.map(fr => <div className='mb-6 p-5 bg-orange-100 rounded'>
+                        firstReviews.map(fr => <div key={fr.id} className='mb-6 p-5 bg-orange-100 rounded'>
                             <div className='flex justify-center'>
                                 <img className='w-20' src={fr.img} alt="" />
                             </div>
