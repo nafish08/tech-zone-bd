@@ -5,8 +5,8 @@ import './Header.css';
 const Header = () => {
     return (
         <div>
-            <nav>
-                <div>
+            <nav className='nav-bar'>
+                <div className='text-3xl uppercase p-4'>
                     <Link to="/home">Home</Link>
                     <Link to="/reviews">Reviews</Link>
                     <Link to="/dashboard">Dashboard</Link>
