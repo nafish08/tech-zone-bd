@@ -21,6 +21,13 @@ const Home = () => {
                     <img src="image/watch.jpg" alt="" />
                 </div>
             </div>
+            <div className='text-4xl'>
+                <h1>Customer Reviews</h1>
+                <div>
+
+                </div>
+                <button className='text-lg bg-orange-500 text-white font-semibold px-4 py-2 rounded'>See All Reviews</button>
+            </div>
         </div>
     );
 };
