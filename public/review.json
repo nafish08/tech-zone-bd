@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Fareha Tahid",
+        "comment": "Fast Service.",
+        "rating": 4,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Md. Nafish Sadik",
+        "comment": "Best Experience.",
+        "rating": 5,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Mehedy Hassan Mukul",
+        "comment": "Beautiful!!",
+        "rating": 5,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Shafinur Rahman",
+        "comment": "Got Exactly What I Expected.",
+        "rating": 4.5,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Jannatul Ferdaus Lamia",
+        "comment": "Awesome !!!",
+        "rating": 3,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Nusrat Kabir Nishu",
+        "comment": "Nice Outlook",
+        "rating": 5,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Tawsif Tamim",
+        "comment": "Super!!!",
+        "rating": 5,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Md. Noushad",
+        "comment": "Kita Koiam",
+        "rating": 4,
+        "img": "/image/man.png"
+    },
+    {
+        "name": "Sumaiya Shompa",
+        "comment": "Too Late.",
+        "rating": 2,
+        "img": "/image/man.png"
+    }
+]
