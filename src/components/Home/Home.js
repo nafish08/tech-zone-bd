@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useReviews from '../../hooks/useReviews';
 import './Home.css';
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews();
+    const firstReviews = reviews.slice(0, 3);
+    console.log(firstReviews);
     return (
         <div className='container'>
             <div className=' grid grid-cols-2 m-4'>
@@ -22,10 +26,21 @@ const Home = () => {
                     <img src="image/watch.jpg" alt="" />
                 </div>
             </div>
-            <div className='text-4xl'>
-                <h1>Customer Reviews</h1>
-                <div>
-
+            <div>
+                <h1 className='text-4xl my-6'>Customer Reviews</h1>
+                <div className='grid grid-cols-3 gap-6'>
+                    {
+                        firstReviews.map(fr => <div className='mb-6 p-5 bg-orange-100 rounded'>
+                            <div className='flex justify-center'>
+                                <img className='w-20' src={fr.img} alt="" />
+                            </div>
+                            <div>
+                                <h1 className='font-semibold'>{fr.name}</h1>
+                                <p>Review: "{fr.comment}"</p>
+                                <p><small>Ratings: {fr.rating}/5</small></p>
+                            </div>
+                        </div>)
+                    }
                 </div>
                 <Link to='/reviews'>
                     <button className='text-lg bg-orange-500 text-white font-semibold px-4 py-2 rounded'>See All Reviews</button>
