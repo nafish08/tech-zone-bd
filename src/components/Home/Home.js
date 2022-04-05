@@ -19,6 +19,7 @@ const Home = () => {
                             manufacturing process is going to profoundly change the way we
                             experience technology in the future. But of course they think
                             this way—it sometimes actually happens.</p>
+                        <button className='text-lg bg-orange-500 text-white font-semibold px-4 py-2 rounded'>Live Demo</button>
                     </div>
                 </div>
                 <div className='flex justify-center items-center'>
