@@ -7,21 +7,21 @@ const Dashboard = () => {
     const [datas, setDatas] = useChartData([]);
     return (
         <div className='container'>
-            <h2>Dashboard</h2>
-            <div className='grid grid-cols-2 gap-10'>
+            <h2 className='text-3xl text-purple-900 uppercase mb-10'>Analysis Charts</h2>
+            <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-10 px-10'>
                 <div>
-                    <h1>Investment vs Revenue vs Sell</h1>
+                    <h1 className='text-xl text-purple-500 font-bold mb-5'>Investment vs Revenue vs Sell</h1>
                     <LineChart width={500} height={300} data={datas}>
-                        <Line dataKey={'investment'} stroke='#000000'></Line>
-                        <Line dataKey={'sell'} stroke='#FF0000'></Line>
-                        <Line dataKey={'revenue'} stroke='#00FF00'></Line>
+                        <Line dataKey={'investment'} stroke='#FFA500'></Line>
+                        <Line dataKey={'sell'} stroke='#800080'></Line>
+                        <Line dataKey={'revenue'} stroke='#00FFFF'></Line>
                         <YAxis></YAxis>
                         <XAxis dataKey='month'></XAxis>
                         <Tooltip></Tooltip>
                     </LineChart>
                 </div>
                 <div>
-                    <h1>Investment vs Revenue vs Sell</h1>
+                    <h1 className='text-xl text-purple-500 font-bold mb-5'>Investment vs Revenue vs Sell</h1>
                     <AreaChart
                         width={500}
                         height={400}
@@ -37,28 +37,28 @@ const Dashboard = () => {
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip />
-                        <Area type="monotone" dataKey="investment" stroke="#000000" fill="#000000" />
-                        <Area type="monotone" dataKey="revenue" stroke="#FF0000" fill="#FF0000" />
-                        <Area type="monotone" dataKey="sell" stroke="#00FF00" fill="#00FF00" />
+                        <Area type="monotone" dataKey="investment" stroke="#FFA500" fill="#FFA500" />
+                        <Area type="monotone" dataKey="revenue" stroke="#FF0000" fill="#800080" />
+                        <Area type="monotone" dataKey="sell" stroke="#00FF00" fill="#00FFFF" />
                     </AreaChart>
                 </div>
                 <div>
-                    <h1>Investment vs Revenue vs Sell</h1>
+                    <h1 className='text-xl text-purple-500 font-bold mb-5'>Investment vs Revenue vs Sell</h1>
                     <BarChart width={500} height={400} data={datas}>
-                        <Bar dataKey="investment" fill="#000000" />
-                        <Bar dataKey="revenue" fill="#FF0000" />
-                        <Bar dataKey="sell" fill="#00FF00" />
+                        <Bar dataKey="investment" fill="#FFA500" />
+                        <Bar dataKey="revenue" fill="#800080" />
+                        <Bar dataKey="sell" fill="#00FFFF" />
                         <YAxis></YAxis>
                         <XAxis dataKey='month'></XAxis>
                         <Tooltip></Tooltip>
                     </BarChart>
                 </div>
                 <div>
-                    <h1>Investment vs Revenue vs Sell</h1>
+                    <h1 className='text-xl text-purple-500 font-bold mb-5'>Investment vs Revenue vs Sell</h1>
                     <PieChart width={400} height={400}>
-                        <Pie data={datas} dataKey="investment" cx="50%" cy="50%" outerRadius={90} fill="#000000" />
-                        <Pie data={datas} dataKey="sell" cx="50%" cy="50%" outerRadius={50} fill="#FF0000" />
-                        <Pie data={datas} dataKey="revenue" cx="50%" cy="50%" outerRadius={30} fill="#00FF00" />
+                        <Pie data={datas} dataKey="investment" cx="50%" cy="50%" outerRadius={100} fill="#FFA500" />
+                        <Pie data={datas} dataKey="sell" cx="50%" cy="50%" outerRadius={70} fill="#800080" />
+                        <Pie data={datas} dataKey="revenue" cx="50%" cy="50%" outerRadius={30} fill="#00FFFF" />
                         <Tooltip></Tooltip>
                     </PieChart>
                 </div>

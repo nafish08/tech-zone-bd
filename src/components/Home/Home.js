@@ -8,7 +8,7 @@ const Home = () => {
     const firstReviews = reviews.slice(0, 3);
     return (
         <div className='container'>
-            <div className=' grid grid-cols-2 m-4'>
+            <div className=' grid lg:grid-cols-2 sm:grid-cols-1 m-4'>
                 <div className='flex justify-center items-center'>
                     <div>
                         <h1 className='text-5xl'>Welcome to <span className='text-orange-500'>Tech Zone BD</span></h1>
@@ -19,7 +19,9 @@ const Home = () => {
                             manufacturing process is going to profoundly change the way we
                             experience technology in the future. But of course they think
                             this way—it sometimes actually happens.</p>
-                        <button className='text-lg bg-orange-500 text-white font-semibold px-4 py-2 rounded'>Live Demo</button>
+                        <div className='flex justify-start my-5'>
+                            <button className='text-lg bg-orange-500 text-white font-semibold px-4 py-2 rounded'>Live Demo</button>
+                        </div>
                     </div>
                 </div>
                 <div className='flex justify-center items-center'>
@@ -28,7 +30,7 @@ const Home = () => {
             </div>
             <div>
                 <h1 className='text-4xl my-6'>Customer Reviews</h1>
-                <div className='grid grid-cols-3 gap-6'>
+                <div className='grid lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                     {
                         firstReviews.map(fr => <div key={fr.id} className='mb-6 p-5 bg-orange-100 rounded'>
                             <div className='flex justify-center'>
